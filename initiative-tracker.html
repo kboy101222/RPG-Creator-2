@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../main.css">
+
+    <title>D&D Character Builder</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Content Creator ALPHA 1</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#diceRoller"><i class="fas fa-dice-d20"></i> Dice Roller</a></li>
+                <li class="nav-item"><a href="initiative-tracker.html" class="nav-link"><i class="fas fa-list-ol"></i> Initiative Tracker</a></li>
+                <li class="nav-item active"><a href="../character/character-builder.html" class="nav-link disabled"><i class="fas fa-scroll"></i> Character Creator</a></li>
+                <li class="nav-item"><a href="" class="nav-link disabled"><i class="fas fa-user"></i> Race Creator</a></li>
+                <li class="nav-item"><a href="" class="nav-link disabled"><i class="fas fa-book"></i> Class Creator</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="https://github.com/kboy101222/RPG-Creator-2" class="nav-link">View on GitHub <i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="initControl">
+        <h3>Initiative:</h3>
+        <button class="btn btn-success" id="newInitItem"><i class="fas fa-plus-circle"></i> Add new character</button>
+        <div class="container initItem">
+            <form class="formPadding">
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Name:</label>
+                    <input type="text" class="form-control col-md-4" id="charName">
+                    
+                    <label class="col-md-2 col-form-label">Initiative:</label>
+                    <input type="number" class="form-control col-md-4">
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Armor Class:</label>
+                    <input type="number" class="form-control col-md-2">
+                    
+                    <label class="col-md-2 col-form-label">Health:</label>
+                    <input type="number" class="form-control col-md-2">
+                    
+                    <label class="col-md-2 col-form-label">Passive Perception:</label>
+                    <input type="number" class="form-control col-md-2">
+                </div>
+                <div class="form-group row">
+                    <button class="btn btn-danger"><i class="fas fa-times-circle"></i> Delete Character</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
